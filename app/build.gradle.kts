@@ -24,6 +24,25 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
+    // اطلاعات Signing هرگز داخل Git ذخیره نمی‌شود و فقط از Environment/Secrets خوانده می‌شود.
+    val releaseStorePath = System.getenv("AS_ACADEMY_KEYSTORE_PATH")
+    if (!releaseStorePath.isNullOrBlank()) {
+        signingConfigs {
+            create("release") {
+                storeFile = file(releaseStorePath)
+                storePassword = System.getenv("AS_ACADEMY_KEYSTORE_PASSWORD")
+                keyAlias = System.getenv("AS_ACADEMY_KEY_ALIAS")
+                keyPassword = System.getenv("AS_ACADEMY_KEY_PASSWORD")
+            }
+        }
+        buildTypes {
+            getByName("release") {
+                signingConfig = signingConfigs.getByName("release")
+                isMinifyEnabled = false
+            }
+        }
+    }
+
     // AGP 9 اجازه اضافه‌کردن Provider مستقیم به SourceSet را نمی‌دهد.
     // مسیر generated به‌صورت File ثابت معرفی می‌شود و task زیر قبل از Build آن را پر می‌کند.
     sourceSets {
