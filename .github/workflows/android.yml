@@ -26,9 +26,6 @@ jobs:
       - name: Build Debug APK
         run: gradle :app:assembleDebug --stacktrace
 
-      - name: Build unsigned Release APK
-        run: gradle :app:assembleRelease --stacktrace
-
       - name: Unit tests
         run: gradle test --stacktrace
 
@@ -37,9 +34,3 @@ jobs:
         with:
           name: as-academy-cplusplus-debug
           path: app/build/outputs/apk/debug/*.apk
-
-      - name: Upload unsigned Release APK
-        uses: actions/upload-artifact@v4
-        with:
-          name: as-academy-cplusplus-release-unsigned
-          path: app/build/outputs/apk/release/*.apk
