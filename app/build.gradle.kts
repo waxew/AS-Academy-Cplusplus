@@ -11,8 +11,8 @@ android {
         applicationId = "com.asdevelopers.academy.cpp"
         minSdk = 23
         targetSdk = 37
-        versionCode = 3
-        versionName = "2.1.0"
+        versionCode = 4
+        versionName = "2.1.1"
     }
 
     buildFeatures {
@@ -24,16 +24,18 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
+    // AGP 9 اجازه اضافه‌کردن Provider مستقیم به SourceSet را نمی‌دهد.
+    // مسیر generated به‌صورت File ثابت معرفی می‌شود و task زیر قبل از Build آن را پر می‌کند.
     sourceSets {
-        getByName("main").assets.srcDir(layout.buildDirectory.dir("generated/courseAssets"))
+        getByName("main").assets.srcDir(file("$buildDir/generated/courseAssets"))
     }
 }
 
 // Course Package اصلی در ریشه ریپو نگهداری می‌شود.
-// پیش از Build، فقط همان بسته به assets اپ Sync می‌شود تا duplicate source نداشته باشیم.
-val syncCourseAssets by tasks.registering(Sync::class) {
+// قبل از Build همان منبع به assets تولیدی اپ Sync می‌شود تا محتوا duplicate نشود.
+val syncCourseAssets = tasks.register<Sync>("syncCourseAssets") {
     from(rootProject.file("course/cpp"))
-    into(layout.buildDirectory.dir("generated/courseAssets/course/cpp"))
+    into(file("$buildDir/generated/courseAssets/course/cpp"))
 }
 
 tasks.named("preBuild").configure {
