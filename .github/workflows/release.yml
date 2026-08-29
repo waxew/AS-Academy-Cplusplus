@@ -9,6 +9,8 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+    env:
+      HAS_SIGNING_KEY: ${{ secrets.AS_ACADEMY_KEYSTORE_BASE64 }}
     steps:
       - name: Checkout with Core submodule
         uses: actions/checkout@v4
@@ -25,11 +27,11 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
 
       - name: Decode signing keystore
-        if: ${{ secrets.AS_ACADEMY_KEYSTORE_BASE64 != '' }}
+        if: ${{ env.HAS_SIGNING_KEY != '' }}
         run: echo "${{ secrets.AS_ACADEMY_KEYSTORE_BASE64 }}" | base64 --decode > app/release.keystore
 
       - name: Build signed Release APK
-        if: ${{ secrets.AS_ACADEMY_KEYSTORE_BASE64 != '' }}
+        if: ${{ env.HAS_SIGNING_KEY != '' }}
         env:
           AS_ACADEMY_KEYSTORE_PATH: release.keystore
           AS_ACADEMY_KEYSTORE_PASSWORD: ${{ secrets.AS_ACADEMY_KEYSTORE_PASSWORD }}
@@ -38,7 +40,7 @@ jobs:
         run: gradle :app:assembleRelease --stacktrace
 
       - name: Build unsigned Release APK
-        if: ${{ secrets.AS_ACADEMY_KEYSTORE_BASE64 == '' }}
+        if: ${{ env.HAS_SIGNING_KEY == '' }}
         run: gradle :app:assembleRelease --stacktrace
 
       - name: Upload Release APK
