@@ -1,0 +1,10 @@
+{
+  "courseId":"cpp",
+  "exercises":[
+    {"id":"ex-f-01","level":"FUNDAMENTALS","title":"مبدل دما","prompt":"Celsius را بگیر و Fahrenheit را محاسبه کن.","acceptance":["ورودی اعشاری","فرمول صحیح","خروجی خوانا"],"difficulty":1},
+    {"id":"ex-b-01","level":"BEGINNER","title":"تحلیل اعداد","prompt":"لیستی از اعداد را بخوان و min/max/average را محاسبه کن.","acceptance":["تابع مجزا","مدیریت ورودی خالی","استفاده از vector"],"difficulty":2},
+    {"id":"ex-i-01","level":"INTERMEDIATE","title":"دفترچه تلفن","prompt":"CRUD مخاطب با ذخیره فایل بساز.","acceptance":["model مشخص","جستجو","persist بعد از restart"],"difficulty":3},
+    {"id":"ex-a-01","level":"ADVANCED","title":"Thread-safe Queue","prompt":"صف producer/consumer با mutex و condition_variable بساز.","acceptance":["بدون data race","shutdown تمیز","چند producer و consumer"],"difficulty":4},
+    {"id":"ex-s-01","level":"SPECIALIST","title":"SQLite Repository","prompt":"Repository محصولات را با prepared statement و transaction پیاده‌سازی کن.","acceptance":["CRUD","مدیریت خطا","transaction","عدم ساخت SQL با concatenation ورودی"],"difficulty":5}
+  ]
+}

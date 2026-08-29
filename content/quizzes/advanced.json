@@ -1,0 +1,9 @@
+{
+  "id":"quiz-cpp-advanced",
+  "title":"آزمون C++ پیشرفته",
+  "questions":[
+    {"id":"q1","type":"single","question":"unique_ptr چه نوع مالکیتی دارد؟","options":["بدون مالکیت","مالکیت یکتا","مالکیت اشتراکی","مالکیت thread-local"],"answer":1,"explanation":"unique_ptr دقیقاً یک owner دارد و ownership با move منتقل می‌شود."},
+    {"id":"q2","type":"single","question":"Data race در C++ چه پیامدی دارد؟","options":["فقط خروجی کندتر","Compile error","Undefined behavior","همیشه deadlock"],"answer":2,"explanation":"Data race روی داده غیراتمیک طبق memory model باعث undefined behavior است."},
+    {"id":"q3","type":"single","question":"weak_ptr معمولاً برای چه استفاده می‌شود؟","options":["مالکیت یکتا","مشاهده shared object بدون افزایش ownership و شکستن cycle","تخصیص stack","جایگزین mutex"],"answer":1,"explanation":"weak_ptr owner نیست و cycleهای shared_ptr را می‌شکند."}
+  ]
+}

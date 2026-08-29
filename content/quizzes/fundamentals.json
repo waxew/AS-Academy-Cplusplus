@@ -1,0 +1,9 @@
+{
+  "id":"quiz-cpp-fundamentals",
+  "title":"آزمون مبانی C++",
+  "questions":[
+    {"id":"q1","type":"single","question":"وظیفه Linker چیست؟","options":["تفسیر خط‌به‌خط کد","اتصال object fileها و symbolها","مدیریت heap","اجرای debugger"],"answer":1,"explanation":"Linker خروجی واحدهای ترجمه و libraryها را به executable/library نهایی متصل می‌کند."},
+    {"id":"q2","type":"single","question":"کدام initialization معمولاً از narrowing ناخواسته جلوگیری می‌کند؟","options":["int x = 2.5","int x(2.5)","int x{2.5}","auto x = 2.5"],"answer":2,"explanation":"Brace initialization بسیاری از narrowing conversionها را compile-time رد می‌کند."},
+    {"id":"q3","type":"single","question":"Scope و Lifetime چه رابطه‌ای دارند؟","options":["کاملاً یکسان‌اند","هیچ ارتباطی ندارند","دو مفهوم متفاوت‌اند که گاهی همپوشانی دارند","فقط برای pointer هستند"],"answer":2,"explanation":"Scope درباره دسترسی نام و lifetime درباره زنده‌بودن object است."}
+  ]
+}

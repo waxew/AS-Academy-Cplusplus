@@ -1,0 +1,15 @@
+{
+  "courseId": "cpp",
+  "chapters": [
+    {"id":"cpp-f-01","levelId":"cpp-fundamentals","title":"شروع با C++","description":"آشنایی، نصب ابزار و اولین برنامه","order":1},
+    {"id":"cpp-f-02","levelId":"cpp-fundamentals","title":"داده و محاسبه","description":"نوع داده، متغیر، ثابت، عملگر و تبدیل نوع","order":2},
+    {"id":"cpp-b-01","levelId":"cpp-beginner","title":"کنترل جریان","description":"شرط، switch و حلقه‌ها","order":1},
+    {"id":"cpp-b-02","levelId":"cpp-beginner","title":"توابع و حافظه","description":"توابع، reference، pointer و dynamic memory","order":2},
+    {"id":"cpp-i-01","levelId":"cpp-intermediate","title":"شی‌گرایی","description":"class، inheritance و polymorphism","order":1},
+    {"id":"cpp-i-02","levelId":"cpp-intermediate","title":"STL و فایل","description":"containers، algorithms، File I/O و exceptions","order":2},
+    {"id":"cpp-a-01","levelId":"cpp-advanced","title":"Modern C++","description":"template، RAII، smart pointers و move semantics","order":1},
+    {"id":"cpp-a-02","levelId":"cpp-advanced","title":"Concurrency و کیفیت","description":"thread، synchronization، testing و profiling","order":2},
+    {"id":"cpp-s-01","levelId":"cpp-specialist","title":"توسعه تخصصی","description":"network، database، Qt، performance، embedded و security","order":1},
+    {"id":"cpp-p-01","levelId":"cpp-projects","title":"پروژه‌ها","description":"از پروژه کنسولی تا capstone نهایی","order":1}
+  ]
+}

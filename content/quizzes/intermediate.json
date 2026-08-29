@@ -1,0 +1,9 @@
+{
+  "id":"quiz-cpp-intermediate",
+  "title":"آزمون OOP و STL",
+  "questions":[
+    {"id":"q1","type":"single","question":"برای توالی پویا، انتخاب پیش‌فرض مناسب معمولاً چیست؟","options":["std::list","std::vector","std::map","std::stack"],"answer":1,"explanation":"vector locality خوب و API عمومی مناسبی دارد و انتخاب پیش‌فرض قوی است."},
+    {"id":"q2","type":"single","question":"Destructor کلاس پایه polymorphic معمولاً باید چگونه باشد؟","options":["deleted","virtual","static","constexpr"],"answer":1,"explanation":"حذف شیء derived از طریق pointer پایه نیازمند destructor مجازی است."},
+    {"id":"q3","type":"single","question":"Rule of Zero چه می‌گوید؟","options":["هیچ object نسازید","از resourceهای RAII استفاده کنید تا special memberها را دستی ننویسید","همیشه پنج special member را بنویسید","فقط pointer خام استفاده کنید"],"answer":1,"explanation":"ترکیب typeهای RAII اغلب نیاز به مدیریت دستی copy/move/destructor را حذف می‌کند."}
+  ]
+}

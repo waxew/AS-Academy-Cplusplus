@@ -1,0 +1,16 @@
+{
+  "courseId": "cpp",
+  "lessons": [
+    {"id":"cpp-l001","chapterId":"cpp-f-01","title":"C++ چیست؟","summary":"کاربردها، مزایا و مدل کامپایل","order":1,"estimatedMinutes":20,"source":"content/lessons/001-what-is-cpp.md"},
+    {"id":"cpp-l002","chapterId":"cpp-f-01","title":"نصب و اولین Build","summary":"Compiler، IDE، CMake و Hello World","order":2,"estimatedMinutes":35,"source":"content/lessons/002-toolchain-first-build.md"},
+    {"id":"cpp-l003","chapterId":"cpp-f-02","title":"متغیر و نوع داده","summary":"انواع پایه، initialization و const","order":1,"estimatedMinutes":35,"source":"content/lessons/003-types-variables.md"},
+    {"id":"cpp-l004","chapterId":"cpp-b-01","title":"شرط و حلقه","summary":"کنترل جریان برنامه","order":1,"estimatedMinutes":40,"source":"content/lessons/004-control-flow.md"},
+    {"id":"cpp-l005","chapterId":"cpp-b-02","title":"توابع، Reference و Pointer","summary":"تفکیک منطق و درک آدرس حافظه","order":1,"estimatedMinutes":55,"source":"content/lessons/005-functions-pointers.md"},
+    {"id":"cpp-l006","chapterId":"cpp-i-01","title":"OOP در C++","summary":"class، constructor، inheritance و polymorphism","order":1,"estimatedMinutes":60,"source":"content/lessons/006-oop.md"},
+    {"id":"cpp-l007","chapterId":"cpp-i-02","title":"STL","summary":"vector، map، iterator، algorithm و lambda","order":1,"estimatedMinutes":55,"source":"content/lessons/007-stl.md"},
+    {"id":"cpp-l008","chapterId":"cpp-a-01","title":"RAII و Smart Pointer","summary":"مدیریت resource در C++ مدرن","order":1,"estimatedMinutes":60,"source":"content/lessons/008-raii-smart-pointers.md"},
+    {"id":"cpp-l009","chapterId":"cpp-a-02","title":"Multithreading","summary":"thread، mutex، race condition و synchronization","order":1,"estimatedMinutes":70,"source":"content/lessons/009-concurrency.md"},
+    {"id":"cpp-l010","chapterId":"cpp-s-01","title":"معماری پروژه حرفه‌ای","summary":"CMake، لایه‌بندی، testing و deployment","order":1,"estimatedMinutes":75,"source":"content/lessons/010-professional-architecture.md"},
+    {"id":"cpp-l011","chapterId":"cpp-p-01","title":"پروژه نهایی","summary":"طراحی AS Store Manager","order":1,"estimatedMinutes":90,"source":"content/lessons/011-capstone.md"}
+  ]
+}
