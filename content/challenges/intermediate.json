@@ -1,0 +1,10 @@
+{
+  "level":"INTERMEDIATE",
+  "challenges":[
+    {"id":"cpp-c201","title":"Bank Account","prompt":"کلاس BankAccount با validation، deposit و withdraw بساز.","difficulty":3},
+    {"id":"cpp-c202","title":"Shape Hierarchy","prompt":"Shape abstract و Circle/Rectangle با area polymorphic بساز.","difficulty":3},
+    {"id":"cpp-c203","title":"Word Frequency","prompt":"با map فراوانی کلمات را محاسبه و مرتب چاپ کن.","difficulty":3},
+    {"id":"cpp-c204","title":"Contact Persistence","prompt":"CRUD مخاطب را با file persistence پیاده‌سازی کن.","difficulty":3},
+    {"id":"cpp-c205","title":"Library Search","prompt":"جست‌وجوی چندمعیاره کتاب با algorithm و lambda بساز.","difficulty":3}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "level":"PROJECT_BASED",
+  "challenges":[
+    {"id":"cpp-pc01","title":"Calculator Milestone","project":"101","required":["validation","functions","tests"]},
+    {"id":"cpp-pc02","title":"Contact Book Milestone","project":"102","required":["CRUD","search","persistence"]},
+    {"id":"cpp-pc03","title":"Library Milestone","project":"103","required":["OOP","business rules","file persistence"]},
+    {"id":"cpp-pc04","title":"Inventory Milestone","project":"104","required":["STL","reports","validation"]},
+    {"id":"cpp-pc05","title":"Networking Milestone","project":"105-106","required":["protocol","concurrency","error handling"]},
+    {"id":"cpp-pc06","title":"Capstone Milestone","project":"107","required":["Qt","SQLite","CMake","tests","release build"]}
+  ]
+}

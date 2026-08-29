@@ -1,12 +1,10 @@
-# فهرست 107 درس C++
+# فهرست 127 درس C++
 
 - 01–18: Fundamentals
 - 19–42: Beginner
 - 43–70: Intermediate
 - 71–93: Advanced
-- 94–100: Specialist
-- 101–107: Project Based
+- 94–120: Specialist
+- 121–127: Project Based
 
-هر درس کوتاه برای مطالعه داخل اپ طراحی شده و با مثال/تمرین‌های موجود در Course Package ترکیب می‌شود.
-
-هدف مسیر: کاربر بدون پیش‌نیاز از نصب ابزار شروع کند و در پایان یک پروژه C++ واقعی با معماری، تست و Build حرفه‌ای بسازد.
+مسیر آموزشی اکنون از صفر مطلق تا معماری، شبکه، دیتابیس، Qt، performance، security و release engineering ادامه دارد.

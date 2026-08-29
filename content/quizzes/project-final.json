@@ -1,0 +1,1 @@
+{"id":"cpp-exam-p","title":"ارزیابی پروژه نهایی","passPercent":80,"rubric":[{"name":"Correctness","weight":25},{"name":"Architecture","weight":20},{"name":"Resource Safety","weight":15},{"name":"Testing","weight":15},{"name":"Persistence","weight":10},{"name":"UX/Error Handling","weight":10},{"name":"Documentation","weight":5}]}

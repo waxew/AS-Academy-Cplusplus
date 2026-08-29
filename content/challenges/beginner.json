@@ -1,0 +1,11 @@
+{
+  "level":"BEGINNER",
+  "challenges":[
+    {"id":"cpp-c101","title":"FizzBuzz","prompt":"از 1 تا n، برای مضارب 3 Fizz و مضارب 5 Buzz چاپ کن.","difficulty":2},
+    {"id":"cpp-c102","title":"Prime Checker","prompt":"تابعی برای بررسی اول بودن عدد بنویس.","difficulty":2},
+    {"id":"cpp-c103","title":"Vector Statistics","prompt":"min/max/average یک vector را با توابع مجزا حساب کن.","difficulty":2},
+    {"id":"cpp-c104","title":"String Analyzer","prompt":"تعداد حروف، ارقام، فاصله‌ها و کلمات را حساب کن.","difficulty":2},
+    {"id":"cpp-c105","title":"Safe Swap","prompt":"دو عدد را با reference جابه‌جا کن.","difficulty":2},
+    {"id":"cpp-c106","title":"Legacy Pointer Refactor","prompt":"کدی که new/delete دارد به unique_ptr تبدیل کن.","difficulty":3}
+  ]
+}

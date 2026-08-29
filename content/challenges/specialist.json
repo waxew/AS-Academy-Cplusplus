@@ -1,0 +1,11 @@
+{
+  "level":"SPECIALIST",
+  "challenges":[
+    {"id":"cpp-c401","title":"TCP Framing","prompt":"برای stream TCP یک length-prefixed message protocol طراحی کن.","difficulty":5},
+    {"id":"cpp-c402","title":"HTTP Client Policy","prompt":"timeout، retry و idempotency policy یک HTTP client را طراحی کن.","difficulty":5},
+    {"id":"cpp-c403","title":"SQLite Product Repository","prompt":"CRUD محصول با prepared statements و transaction پیاده‌سازی کن.","difficulty":5},
+    {"id":"cpp-c404","title":"Qt CRUD Screen","prompt":"صفحه Qt برای فهرست، جستجو، افزودن و ویرایش محصول بساز.","difficulty":5},
+    {"id":"cpp-c405","title":"Profiler Lab","prompt":"یک bottleneck واقعی را profile و قبل/بعد optimization اندازه‌گیری کن.","difficulty":5},
+    {"id":"cpp-c406","title":"Sanitizer Hunt","prompt":"نمونه‌ای شامل use-after-free و data race را با sanitizer پیدا و اصلاح کن.","difficulty":5}
+  ]
+}

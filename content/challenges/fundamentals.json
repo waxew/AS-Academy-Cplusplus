@@ -1,0 +1,9 @@
+{
+  "level":"FUNDAMENTALS",
+  "challenges":[
+    {"id":"cpp-c001","title":"Hello Academy","prompt":"برنامه‌ای بنویس که نام کاربر را بگیرد و پیام خوش‌آمد چاپ کند.","starter":"#include <iostream>\n#include <string>\nint main(){ /* TODO */ }","tests":["ورودی Ali -> خروجی شامل Ali","exit code = 0"],"difficulty":1},
+    {"id":"cpp-c002","title":"Temperature Converter","prompt":"Celsius را به Fahrenheit تبدیل کن.","tests":["0 -> 32","100 -> 212","-40 -> -40"],"difficulty":1},
+    {"id":"cpp-c003","title":"Rectangle","prompt":"طول و عرض را بگیر و محیط و مساحت را چاپ کن.","tests":["5 3 -> area=15","5 3 -> perimeter=16"],"difficulty":1},
+    {"id":"cpp-c004","title":"Seconds Formatter","prompt":"ثانیه را به ساعت، دقیقه و ثانیه تبدیل کن.","tests":["3661 -> 1:1:1"],"difficulty":2}
+  ]
+}

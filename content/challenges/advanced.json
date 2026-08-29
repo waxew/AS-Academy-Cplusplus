@@ -1,0 +1,11 @@
+{
+  "level":"ADVANCED",
+  "challenges":[
+    {"id":"cpp-c301","title":"Generic Clamp","prompt":"یک function template محدودشده با concept برای clamp بنویس.","difficulty":4},
+    {"id":"cpp-c302","title":"Ownership Graph","prompt":"درخت parent/child با unique_ptr و observer غیرمالک طراحی کن.","difficulty":4},
+    {"id":"cpp-c303","title":"Thread Safe Queue","prompt":"صف producer/consumer با mutex و condition_variable بساز.","difficulty":4},
+    {"id":"cpp-c304","title":"Parallel Counter","prompt":"چند thread روی counter کار کنند بدون data race.","difficulty":4},
+    {"id":"cpp-c305","title":"Filesystem Report","prompt":"فایل‌های یک مسیر را پیمایش و بر اساس extension گزارش کن.","difficulty":4},
+    {"id":"cpp-c306","title":"Benchmark Sort","prompt":"سه روش sort را در Release build اندازه‌گیری و نتیجه را تحلیل کن.","difficulty":4}
+  ]
+}
