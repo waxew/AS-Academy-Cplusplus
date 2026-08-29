@@ -1,19 +1,25 @@
 # Changelog
 
+## 2.4.0
+- رفع regression نسخه 2.3 و بازگردانی Core/CI/Release changes
+- ارتقای submodule به Core جدید
+- اصلاح تمام Lesson Blockهای اصلی مطابق id/type/content contract
+- عمیق‌سازی 22 درس جامع داخل اپ
+- افزودن Mastery Quizهای سطحی
+- غنی‌سازی Exercises، Projects و Glossary
+- versionCode 6 / versionName 2.4.0
+
+## 2.3.0
+- Specialist labs، capstone و final assessment
+
+## 2.2.0
+- Continue Learning، Learning Extras و Release-ready pipeline
+
+## 2.1.1
+- رفع AGP 9 assets و Build موفق Android
+
 ## 2.0.0
-- اضافه‌شدن Course Package واقعی و مستقیم سازگار با AssetCoursePackageLoader در AS-Academy-Core
-- levels/chapters/lesson blockهای قابل render داخل اپ
-- exercise، quiz، project و glossary قابل load توسط Core
-- حفظ curriculum 127 واحدی به‌عنوان نقشه تفصیلی و اتصال آن به درس‌های جامع داخل اپ
+- Core-compatible Course Package
 
 ## 1.3.0
-- 127 واحد آموزشی، آزمون سطحی، challenge pack و progression metadata
-
-## 1.2.0
-- 107 Micro-Lesson و مسیر کامل اصلی
-
-## 1.1.0
-- chapters، lessons، quiz و structured exercises
-
-## 1.0.0
-- Course Package، CMake/CTest، CI و اتصال Core
+- مسیر 127 واحدی
