@@ -1,110 +1,57 @@
 # AS Academy — C++
 
-مرجع جامع آموزش زبان برنامه‌نویسی C++ از صفر تا سطح تخصصی.
+دوره جامع C++ از صفر مطلق تا توسعه حرفه‌ای، پروژه‌محور و سازگار با معماری مشترک `AS-Academy-Core`.
 
-## مسیر آموزشی
+## وضعیت
+نسخه دوره: **1.0.0**  
+Course ID: `cpp`  
+استاندارد اصلی مثال‌ها: **C++20**  
+Core contract: `contentSchemaVersion = 1`
 
-این دوره برای هنرجویی طراحی شده است که می‌تواند بدون پیش‌نیاز برنامه‌نویسی شروع کند و به سطح توسعه پروژه‌های واقعی C++ برسد.
+## مسیر یادگیری
+1. `fundamentals/` — نصب، Hello World، انواع داده و I/O
+2. `beginner/` — شرط، حلقه، تابع، array/string، pointer/reference
+3. `intermediate/` — OOP، STL، File I/O و exception
+4. `advanced/` — template، RAII، smart pointer، thread و algorithms
+5. `professional/` — CMake، network، database، Qt، performance، embedded، game و security
+6. `projects/` — پروژه‌های مرحله‌ای و پروژه نهایی
 
-### 01 — مبانی
-- معرفی C++ و کاربردها
-- نصب و آماده‌سازی محیط توسعه
-- Compiler، Linker و Build
-- ساخت اولین برنامه
-- ساختار فایل‌های C++
-- متغیرها و انواع داده
-- ثابت‌ها و عملگرها
-- ورودی و خروجی
-- Type Casting و Scope
-- خطاهای Compile-time و Runtime
+نقشه کامل: [COURSE_MAP.md](COURSE_MAP.md)
 
-### 02 — مقدماتی
-- شرط‌ها و حلقه‌ها
-- توابع
-- آرایه‌ها و رشته‌ها
-- Reference و Pointer
-- مدیریت حافظه پویا
-- Struct و Enum
-- Namespace
-- Header و Source Files
-
-### 03 — برنامه‌نویسی شی‌گرا
-- Class و Object
-- Constructor و Destructor
-- Encapsulation
-- Inheritance
-- Polymorphism
-- Abstraction
-- Virtual Functions
-- Operator Overloading
-- Copy و Move Semantics
-
-### 04 — STL و ساختمان داده
-- Vector، Array، List و Deque
-- Stack و Queue
-- Set و Map
-- Unordered Containers
-- Iterator
-- Algorithms
-- Lambda
-- Pair و Tuple
-- ساختمان داده و الگوریتم‌ها
-
-### 05 — C++ پیشرفته و مدرن
-- Templates
-- Exception Handling
-- RAII
-- Smart Pointers
-- Move Semantics
-- C++11 / 14 / 17 / 20 / 23
-- constexpr
-- Concepts
-- Ranges
-- Coroutines
-
-### 06 — سطح تخصصی
-- Multithreading و Concurrency
-- Network Programming
-- Database Programming
-- Qt Desktop Development
-- System Programming
-- Embedded C++
-- Game Development
-- Performance Engineering
-- CMake
-- Testing و Debugging
-- Secure Coding
-- Design Patterns
-
-## پروژه‌های عملی
-
-در طول دوره پروژه‌ها از نمونه‌های ساده مانند ماشین‌حساب و دفترچه تلفن شروع شده و به پروژه‌های بزرگ‌تر مانند مدیریت کتابخانه، مدیریت فروشگاه، Chat Client/Server، Download Manager، برنامه Qt و سیستم حسابداری می‌رسند.
-
-## پروژه نهایی
-
-پروژه نهایی دوره یک نرم‌افزار مدیریت فروشگاه دسکتاپ است که مباحث OOP، STL، SQLite، Qt، CMake، Testing، Error Handling و معماری چندلایه را به‌صورت یکپارچه تمرین می‌کند.
-
-## ساختار مخزن
-
-```text
-AS-Academy-Cplusplus/
-├── fundamentals/
-├── beginner/
-├── intermediate/
-├── advanced/
-├── professional/
-├── exercises/
-├── projects/
-├── examples/
-├── tests/
-├── docs/
-└── README.md
+## Build همه مثال‌ها
+```bash
+cmake -S . -B build
+cmake --build build --config Release
+ctest --test-dir build -C Release --output-on-failure
 ```
 
-## روش مطالعه
+## وابستگی به Core
+این ریپو منطق مشترک UI/Navigation/Progress/Quiz/Search/Bookmark/Settings/Database/Updater را تکرار نمی‌کند. این موارد در `AS-Academy-Core` نگهداری می‌شوند. جزئیات: [CORE_INTEGRATION.md](CORE_INTEGRATION.md).
 
-هر فصل شامل توضیح مفهومی، مثال کدنویسی، تمرین، پاسخ تمرین و پروژه مرحله‌ای خواهد بود. کدهای آموزشی تا حد امکان دارای کامنت توضیحی هستند تا نقش دستورات و ساختار برنامه قابل پیگیری باشد.
+## محتوای دوره
+هر سطح شامل آموزش مفهومی، مثال قابل Build، تمرین و پروژه است. فایل‌های نمونه برای قابل فهم بودن سورس دارای کامنت توضیحی هستند.
+
+## پروژه نهایی
+`AS Store Manager`: نرم‌افزار مدیریت فروشگاه با C++20، Qt، SQLite، CMake، تست و معماری چندلایه. مشخصات در `docs/FINAL_PROJECT.md` و `projects/final_store_manager/README.md` آمده است.
+
+## ساختار
+```text
+manifest.json
+content/
+fundamentals/
+beginner/
+intermediate/
+advanced/
+professional/
+exercises/
+projects/
+tests/
+docs/
+.github/workflows/
+```
+
+## Build Quality
+CI روی Windows، Linux و macOS پروژه را Configure، Build و Test می‌کند.
 
 ---
-
-AS Academy — C++ Learning Path
+AS Academy / C++ Course Package
