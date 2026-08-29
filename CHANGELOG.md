@@ -1,19 +1,21 @@
 # Changelog
 
+## 2.2.0
+- به‌روزرسانی AS-Academy-Core به جدیدترین نسخه مشترک
+- اضافه‌شدن Continue Learning و Learning Extras از Core بدون کپی منطق مشترک
+- CI برای Build همزمان Debug و unsigned Release APK
+- تکمیل مستندات Release Readiness و Signing
+
+## 2.1.1
+- رفع خطای AGP 9 در generated assets
+- Build موفق Debug APK و Unit Tests
+- آماده‌سازی Release/Signing workflow
+
+## 2.1.0
+- Android app wrapper و اتصال مستقیم به AS-Academy-Core
+
 ## 2.0.0
-- اضافه‌شدن Course Package واقعی و مستقیم سازگار با AssetCoursePackageLoader در AS-Academy-Core
-- levels/chapters/lesson blockهای قابل render داخل اپ
-- exercise، quiz، project و glossary قابل load توسط Core
-- حفظ curriculum 127 واحدی به‌عنوان نقشه تفصیلی و اتصال آن به درس‌های جامع داخل اپ
+- Course Package سازگار با Core
 
 ## 1.3.0
-- 127 واحد آموزشی، آزمون سطحی، challenge pack و progression metadata
-
-## 1.2.0
-- 107 Micro-Lesson و مسیر کامل اصلی
-
-## 1.1.0
-- chapters، lessons، quiz و structured exercises
-
-## 1.0.0
-- Course Package، CMake/CTest، CI و اتصال Core
+- 127 واحد آموزشی و progression/challenge packs
