@@ -1,12 +1,13 @@
 # Changelog
 
+## 2.0.0
+- اضافه‌شدن Course Package واقعی و مستقیم سازگار با AssetCoursePackageLoader در AS-Academy-Core
+- levels/chapters/lesson blockهای قابل render داخل اپ
+- exercise، quiz، project و glossary قابل load توسط Core
+- حفظ curriculum 127 واحدی به‌عنوان نقشه تفصیلی و اتصال آن به درس‌های جامع داخل اپ
+
 ## 1.3.0
-- گسترش دوره از 107 به 127 درس
-- تکمیل Networking، SQLite، Migration، Repository، Qt Model/View، Performance، Fuzzing و Release Engineering
-- افزودن 6 ارزیابی پایان سطح/پروژه
-- افزودن Challenge Pack برای تمام Levelها
-- افزودن learning-path metadata برای progression و unlock
-- شماره‌گذاری نهایی پروژه‌ها 121 تا 127
+- 127 واحد آموزشی، آزمون سطحی، challenge pack و progression metadata
 
 ## 1.2.0
 - 107 Micro-Lesson و مسیر کامل اصلی
