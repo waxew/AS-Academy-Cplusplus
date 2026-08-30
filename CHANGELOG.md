@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.5.2
+- افزودن 16 درس مستقل تخصصی از Concurrency تا Embedded
+- Thread lifecycle، condition variable، future/async و atomics/memory ordering
+- CMake target-based، debugging/sanitizers، testing/benchmark/profiling
+- TCP/UDP، HTTP/REST/JSON/WebSocket
+- SQLite، repository/migration، Qt event loop و Model/View
+- System programming، performance/cache، secure coding/UB و Embedded C++
+- افزایش محتوای app-renderable از 44 به 60 درس
+
 ## 2.5.1
 - افزودن 12 درس مستقل عمیق برای Intermediate و Advanced
 - پوشش Constructor/Invariant، Composition/Polymorphism و Rule of Zero
