@@ -1,0 +1,24 @@
+name: Course Content QA
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'course/cpp/**'
+      - 'tools/validate_course.py'
+      - '.github/workflows/content-qa.yml'
+  pull_request:
+    paths:
+      - 'course/cpp/**'
+      - 'tools/validate_course.py'
+
+jobs:
+  validate-course:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Validate course package
+        run: python tools/validate_course.py

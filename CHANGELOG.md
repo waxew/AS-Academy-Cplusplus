@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.5.0
+- افزودن Course Content QA مستقل از Android runtime
+- اعتبارسنجی JSON، level/chapter/lesson references و Lesson Block contract
+- اعتبارسنجی Quiz/Exercise references و پاسخ صحیح Quiz
+- گسترش Mastery Quiz به همه بخش‌های اصلی دوره
+- افزودن تمرین‌های تکمیلی OOP، STL، Templates، Tooling، Networking، Qt و Performance
+- versionCode 7 / versionName 2.5.0
+
 ## 2.4.0
 - رفع regression نسخه 2.3 و بازگردانی Core/CI/Release changes
 - ارتقای submodule به Core جدید
