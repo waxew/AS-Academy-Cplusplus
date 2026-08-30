@@ -11,8 +11,8 @@ android {
         applicationId = "com.asdevelopers.academy.cpp"
         minSdk = 23
         targetSdk = 37
-        versionCode = 7
-        versionName = "2.5.0"
+        versionCode = 8
+        versionName = "2.6.0"
     }
 
     buildFeatures { compose = true }
