@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.5.1
+- افزودن 12 درس مستقل عمیق برای Intermediate و Advanced
+- پوشش Constructor/Invariant، Composition/Polymorphism و Rule of Zero
+- گسترش STL، Algorithms، Complexity، Recursion، Tree و Graph
+- گسترش Ownership/RAII، Move/Forwarding، Templates/Concepts و Ranges
+- افزایش محتوای app-renderable از 32 به 44 درس
+
 ## 2.5.0
 - افزودن Course Content QA مستقل از Android runtime
 - اعتبارسنجی JSON، level/chapter/lesson references و Lesson Block contract
