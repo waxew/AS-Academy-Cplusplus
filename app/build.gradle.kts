@@ -11,8 +11,8 @@ android {
         applicationId = "com.asdevelopers.academy.cpp"
         minSdk = 23
         targetSdk = 37
-        versionCode = 9
-        versionName = "2.7.0"
+        versionCode = 10
+        versionName = "2.8.0"
     }
 
     buildFeatures { compose = true }
@@ -45,8 +45,14 @@ android {
     }
 }
 
+// MainCourse is the canonical curriculum source. The local package is a temporary bootstrap fallback
+// until the first C++ migration commit is present in the pinned MainCourse submodule.
+val mainCoursePackage = rootProject.file("as-academy-maincourse/courses/cplusplus/course")
+val legacyBootstrapPackage = rootProject.file("course/cpp")
+val canonicalCoursePackage = if (mainCoursePackage.exists()) mainCoursePackage else legacyBootstrapPackage
+
 val syncCourseAssets = tasks.register<Sync>("syncCourseAssets") {
-    from(rootProject.file("course/cpp"))
+    from(canonicalCoursePackage)
     into(file("$buildDir/generated/courseAssets/course/cpp"))
 }
 
@@ -55,6 +61,7 @@ tasks.named("preBuild").configure { dependsOn(syncCourseAssets) }
 dependencies {
     implementation(project(":core"))
     implementation(project(":course"))
+    implementation(project(":main-ui"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.lifecycle.runtime)

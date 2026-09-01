@@ -1,3 +1,9 @@
 [submodule "as-academy-core"]
 	path = as-academy-core
 	url = https://github.com/waxew/AS-Academy-Core.git
+[submodule "as-academy-mainui"]
+	path = as-academy-mainui
+	url = https://github.com/waxew/AS-Academy-MainUi.git
+[submodule "as-academy-maincourse"]
+	path = as-academy-maincourse
+	url = https://github.com/waxew/AS-Academy-MainCourse.git
